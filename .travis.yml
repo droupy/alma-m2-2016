@@ -15,3 +15,8 @@ before_install:
 
 script:
   - mvn clean verify -f alma-server/pom.xml -e
+  
+after_success:
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
+  - docker images
+  - docker push droupy/alma-server:latest
