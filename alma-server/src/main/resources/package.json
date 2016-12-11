@@ -1,0 +1,38 @@
+{
+  "name": "alma-master",
+  "version": "0.1.0",
+  "description": "Simple web application",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droupy/alma-m2-2016.git"
+  },
+  "keywords": [
+    "alma"
+  ],
+  "author": "Stéphane Bégaudeau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/droupy/alma-m2-2016/issues"
+  },
+  "homepage": "https://github.com/droupy/alma-m2-2016#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.3",
+    "jshint-checkstyle-file-reporter": "0.0.1",
+    "jshint-stylish": "^2.2.1"
+  }
+}
