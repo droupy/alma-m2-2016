@@ -12,8 +12,16 @@ branches:
 before_install:
   - docker version
   - docker info
+  - node --version
+  - npm --version
 
 script:
+  - cd alma-server/src/main/resources
+  - pwd
+  - npm install -g gulp
+  - npm install
+  - gulp minify
+  - cd ../../../../
   - mvn clean verify -f alma-server/pom.xml -e
   
 after_success:
